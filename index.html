@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MahmadReelz – Promotions & Collaborations</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Promotions and collaborations with @mahmadreelz on Instagram. DM for promotions, brand deals, and content collaborations." />
+  <meta property="og:title" content="MahmadReelz – Promotions & Collaborations" />
+  <meta property="og:description" content="Work with @mahmadreelz for promotions, shoutouts, and collaborations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain-here.com" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-main: #050510;
+      --bg-card: #101020;
+      --accent: #ff3d70;
+      --accent-soft: rgba(255, 61, 112, 0.12);
+      --accent-2: #7f5dff;
+      --text-main: #f5f5ff;
+      --text-muted: #a3a3c2;
+      --border-subtle: rgba(255, 255, 255, 0.06);
+      --glow: 0 0 40px rgba(127, 93, 255, 0.5);
+      --radius-lg: 22px;
+      --radius-md: 14px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top left, #1b1032, #050510 40%), #050510;
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    .page-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 18px 40px;
+      position: relative;
+    }
+
+    .orb {
+      position: fixed;
+      filter: blur(80px);
+      opacity: 0.7;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .orb-1 { width: 260px; height: 260px; background: #ff3d70; top: -80px; left: -40px; }
+    .orb-2 { width: 260px; height: 260px; background: #7f5dff; bottom: -80px; right: -40px; }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 26px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      border: 2px solid var(--accent);
+      background: radial-gradient(circle at 30% 30%, #fff, #ff3d70);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 22px;
+      color: #050510;
+      box-shadow: var(--glow);
+    }
+
+    .brand-text h1 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-text p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pill {
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--text-muted);
+      backdrop-filter: blur(10px);
+      background: rgba(5,5,16,0.7);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #36fba1;
+      box-shadow: 0 0 10px #36fba1;
+    }
+
+    .btn-ghost {
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      background: rgba(9,9,24,0.9);
+      cursor: pointer;
+      transition: 0.2s ease all;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.95fr);
+      gap: 22px;
+    }
+
+    @media (max-width: 860px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-actions {
+        align-self: stretch;
+        justify-content: space-between;
+      }
+    }
+
+    .hero-card {
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(16,16,32,0.96), rgba(6,6,18,0.96));
+      border: 1px solid var(--border-subtle);
+      padding: 20px 18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.55);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      background: rgba(7,7,24,0.85);
+      margin-bottom: 10px;
+    }
+
+    .hero-tag span {
+      font-size: 14px;
+    }
+
+    .hero-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      max-width: 420px;
+      line-height: 1.5;
+    }
+
+    .highlight {
+      background: linear-gradient(90deg, #ff3d70, #ffb347);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 600;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      border-radius: 999px;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      background: linear-gradient(135deg, #ff3d70, #ff7a9f);
+      color: #050510;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 0 25px rgba(255,61,112,0.6);
+      text-decoration: none;
+    }
+
+    .btn-primary span.icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: rgba(5,5,16,0.8);
+      color: #ffbcd0;
+      font-size: 12px;
+    }
+
+    .btn-secondary {
+      border-radius: 999px;
+      padding: 9px 18px;
+      border: 1px solid rgba(127,93,255,0.8);
+      background: rgba(14,14,32,0.95);
+      color: var(--text-main);
+      font-size: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      min-width: 90px;
+    }
+
+    .metric-label {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .metric-value {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .metric-pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(9, 9, 32, 0.9);
+      border: 1px solid var(--border-subtle);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .metric-pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent-2);
+    }
+
+    .footer-note {
+      font-size: 11px;
+      color: var(--text-muted);
+      border-top: 1px dashed rgba(255,255,255,0.08);
+      padding-top: 10px;
+      margin-top: 12px;
+    }
+
+    .side-column {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      border-radius: var(--radius-lg);
+      background: radial-gradient(circle at top, #17172b, #070716 55%);
+      border: 1px solid var(--border-subtle);
+      padding: 16px 14px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.6);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .card-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .badge {
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 10px;
+      border: 1px solid rgba(255,255,255,0.18);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    .services-list {
+      list-style: none;
+      font-size: 12px;
+      color: var(--text-muted);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px 14px;
+      margin-bottom: 8px;
+    }
+
+    .services-list li::before {
+      content: "•";
+      margin-right: 5px;
+      color: var(--accent);
+    }
+
+    .note {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .insta-frame-wrap {
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255,255,255,0.08);
+      background: radial-gradient(circle at top, rgba(127,93,255,0.25), rgba(5,5,16,0.95));
+      padding: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .insta-frame-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .insta-handle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .insta-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, #fff, #ff3d70);
+    }
+
+    .insta-open {
+      font-size: 10px;
+      text-decoration: none;
+      color: #ffd1e0;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,209,224,0.4);
+      background: rgba(5,5,20,0.8);
+    }
+
+    footer {
+      margin-top: 26px;
+      font-size: 10px;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    footer a {
+      color: #ff9ec0;
+      text-decoration: none;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="page-wrap">
+    <header>
+      <div class="brand">
+        <div class="brand-avatar">M</div>
+        <div class="brand-text">
+          <h1>MahmadReelz</h1>
+          <p>Instagram promotions • collabs • reels</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          <span>Open for paid promotions & collabs</span>
+        </div>
+        <a class="btn-ghost" href="https://www.instagram.com/mahmadreelz" target="_blank" rel="noopener">
+          View Instagram profile
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT: Hero & info -->
+      <section class="hero-card">
+        <div class="hero-tag">
+          <span>🔥</span>
+          <span>Boost your reach with viral reels</span>
+        </div>
+
+        <h2 class="hero-title">
+          Promote your brand with <span class="highlight">@mahmadreelz</span>
+        </h2>
+
+        <p class="hero-subtitle">
+          Get your product, brand, or page featured in high‑engagement reels. Perfect for shoutouts, product highlights, and creative collaborations tailored to your audience.
+        </p>
+
+        <div class="cta-row">
+          <!-- DM CTA -->
+          <a
+            class="btn-primary"
+            href="https://www.instagram.com/direct/t/17843636675484875/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>DM now for promotion</span>
+            <span class="icon">▶</span>
+          </a>
+
+          <!-- Email CTA with your email -->
+          <a class="btn-secondary" href="mailto:mahmad302000@gmail.com?subject=Collaboration%20with%20MahmadReelz">
+            <span>Collab via email</span>
+          </a>
+        </div>
+
+        <div class="trust-row">
+          <div class="metric">
+            <span class="metric-label">Services</span>
+            <span class="metric-value">Promotions & collabs</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Platform</span>
+            <span class="metric-value">Instagram reels</span>
+          </div>
+          <div class="metric-pill">
+            <span class="metric-pill-dot"></span>
+            <span>Fast replies on DMs</span>
+          </div>
+        </div>
+
+        <p class="footer-note">
+          For custom ideas (series, skits, product showcases, giveaways, etc.), send a detailed message on Instagram. You will receive pricing and concept options directly in your DMs.
+        </p>
+      </section>
+
+      <!-- RIGHT: Services + Reels -->
+      <aside class="side-column">
+        <!-- Services card -->
+        <section class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Available services</h3>
+              <p class="card-sub">Choose what fits your brand</p>
+            </div>
+            <span class="badge">Promo Menu</span>
+          </div>
+
+          <ul class="services-list">
+            <li>Reel promotions</li>
+            <li>Story shoutouts</li>
+            <li>Page promotions</li>
+            <li>Brand collabs</li>
+            <li>Product features</li>
+            <li>Custom content ideas</li>
+          </ul>
+
+          <p class="note">
+            Rates vary based on content type and duration. Send your requirements via Instagram DM to get a custom quote.
+          </p>
+        </section>
+
+        <!-- Instagram reels embed card -->
+        <section class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Latest Instagram reels</h3>
+              <p class="card-sub">Watch recent content from @mahmadreelz</p>
+            </div>
+            <span class="badge">Live Feed</span>
+          </div>
+
+          <div class="insta-frame-wrap">
+            <div class="insta-frame-header">
+              <div class="insta-handle">
+                <div class="insta-dot"></div>
+                <span>@mahmadreelz</span>
+              </div>
+              <a
+                href="https://www.instagram.com/mahmadreelz"
+                class="insta-open"
+                target="_blank"
+                rel="noopener"
+              >
+                Open on Instagram
+              </a>
+            </div>
+
+            <!-- Embedded specific reel -->
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DRNeCsLDeZI/"
+              data-instgrm-version="14"
+              style="background:#000; border-radius:16px; margin:0 auto; max-width:540px; min-width:200px; width:100%;"
+            ></blockquote>
+            <script async src="https://www.instagram.com/embed.js"></script>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> MahmadReelz. All rights reserved.</span>
+      <span>Website built to support Instagram promotions & collaborations.</span>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
